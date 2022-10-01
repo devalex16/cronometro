@@ -1,0 +1,90 @@
+:root {
+  --cor0: #1C1429;
+  --cor1: #2D2240;
+  --cor2: #514365;
+  --cor3: #00FE81;
+}
+
+* {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cor0);
+}
+
+main {
+  height: 25vh;
+  width: 85%;
+  border: 1.3vh solid var(--cor3);
+  border-radius: 8vh;
+  background-color: rgb(10, 10, 40);
+  margin: 20px;
+}
+
+p#hrs {
+  font-size: 3.0vh;
+  font-weight: 300;
+  text-align: center;
+  color: var(--cor3);
+}
+
+/* [CRONOMÊTRO] */
+main > span {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main > span > p {
+  color: var(--cor3);
+  font-weight: 600;
+  font-size: 15vh;
+  text-shadow: 0px 0px 20px var(--cor3);
+}
+
+span > div {
+  margin-top: 40px;
+  color: var(--cor3);
+  font-weight: 600;
+  font-size: 3vh;
+}
+
+div > img {
+  width: 80%;
+  height: 80%;
+}
+
+/* [BOTÃOS] */
+/* CONFIG DO BLOCO DOS BOTÃOS */
+span#botaos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* CONFIG DE CADA BOTÃO */
+span#botaos > div.inicio{
+  width: 10vh;
+  height: 9.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 200px;
+  box-shadow: 0px 0px 10px white;
+  background-color: var(--cor3);
+}
